@@ -1,4 +1,4 @@
-# 🧪 Lab 5: The Architecture of Bias
+# 🧪 Lab 6: The Architecture of Bias
 
 ## 📌 Project Overview
 This lab investigates how **bias enters machine learning systems before any model is trained**, focusing on the **Data Generating Process (DGP)**, sampling mechanisms, and experimental integrity. The project demonstrates that many downstream model failures originate from **data collection and assignment errors**, not algorithm choice.
