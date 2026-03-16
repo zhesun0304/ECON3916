@@ -31,6 +31,11 @@ Through this approach, I am learning how to:
 - Evaluate models using both **economic reasoning** and **statistical metrics**
 - Apply machine learning responsibly in economic contexts
 
+### Concept Extension: Return-Aware Experimentation  
+Beyond the academic convention of **p < 0.05**, I understand that real-world experimentation often depends on whether acting on a result creates enough expected value to justify the decision.  
+This idea, sometimes described as **return-aware experimentation**, treats decision thresholds as **business parameters** shaped by risk, cost, speed, and upside, rather than as fixed scientific rules.  
+In practice, this means strong evidence is important, but decision-making must also account for whether the expected return is large enough to matter in an applied setting.
+
 ---
 
 ## 🛠️ Tech Stack
@@ -53,4 +58,3 @@ The tools and frameworks used throughout this repository include:
 - A growing record of my progress in **statistical learning for economics**
 
 I’m always learning, refining, and expanding this work—feedback and discussion are welcome.
-
