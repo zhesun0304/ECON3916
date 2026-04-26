@@ -29,8 +29,8 @@ stress_level = st.sidebar.selectbox("Stress Level", ["Low", "Medium", "High"])
 physical_activity = st.sidebar.slider("Physical Activity Hours", min_value=0.0, max_value=10.0, value=2.0, step=0.5)
 health_issues = st.sidebar.selectbox("Health Issues", ["None", "Diabetes", "Hypertension", "Heart Disease", "Other"])
 occupation = st.sidebar.selectbox("Occupation", ["Student", "Office Worker", "Healthcare", "Education", "Service", "Other"])
-smoking = st.sidebar.selectbox("Smoking", ["Yes", "No"])
-alcohol = st.sidebar.selectbox("Alcohol Consumption", ["Yes", "No"])
+smoking = st.sidebar.selectbox("Smoking", ["No", "Yes"])
+alcohol = st.sidebar.selectbox("Alcohol Consumption", ["No", "Yes"])
 
 model = joblib.load(model_path)
 
@@ -47,8 +47,8 @@ input_data = pd.DataFrame({
     "Physical_Activity_Hours": [physical_activity],
     "Health_Issues": [health_issues],
     "Occupation": [occupation],
-    "Smoking": [smoking],
-    "Alcohol_Consumption": [alcohol]
+    "Smoking": [1 if smoking == "Yes" else 0],
+    "Alcohol_Consumption": [1 if alcohol == "Yes" else 0]
 })
 
 prediction = model.predict(input_data)[0]
